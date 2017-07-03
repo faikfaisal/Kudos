@@ -1,0 +1,12 @@
+<md-toolbar color="primary">
+  <button md-button [mdMenuTriggerFor]="appMenu">
+    <md-icon>menu</md-icon>
+  </button>
+  <span routerLink="/homescreen">HrHr</span>
+</md-toolbar>
+
+<md-menu #appMenu="mdMenu">
+  <button md-menu-item routerLink="/login"> Login</button>
+  <button md-menu-item> More Information</button>
+</md-menu>
+<router-outlet></router-outlet>

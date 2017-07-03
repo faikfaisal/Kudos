@@ -1,0 +1,15 @@
+<form (ngSubmit)="login()" #loginForm="ngForm">
+  <div layout="row">
+    <md-input-container class="login-form-full-width">
+      <input mdInput type="email" placeholder="Email" name="email" id="email" [(ngModel)]="emailAddress"
+             #email="ngModel" required>
+    </md-input-container>
+  </div>
+  <div layout="row">
+    <md-input-container class="login-form-full-width">
+      <input mdInput type="password" placeholder="Password" name="password" id="password" [(ngModel)]="password"
+             required>
+    </md-input-container>
+    <button md-raised-button type="submit" class="login-form-full-width">Save</button>
+  </div>
+</form>
